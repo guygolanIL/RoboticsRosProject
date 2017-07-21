@@ -1,9 +1,3 @@
-/*
- * Location.h
- *
- *  Created on: Jan 17, 2017
- *      Author: user
- */
 
 #ifndef LOCATION_H_
 #define LOCATION_H_

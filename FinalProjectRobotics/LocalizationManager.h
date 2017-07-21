@@ -1,9 +1,4 @@
-/*
- * LocalizationManager.h
- *
- *  Created on: Jan 17, 2017
- *      Author: user
- */
+
 
 #ifndef LOCALIZATIONMANAGER_H_
 #define LOCALIZATIONMANAGER_H_

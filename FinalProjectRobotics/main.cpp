@@ -1,9 +1,3 @@
-/*
- * HamsterAPIClientSimpleBehaviourExample.cpp
- *
- *  Created on: Aug 10, 2016
- *      Author: ofir
- */
 
 #include <HamsterAPIClientCPP/Hamster.h>
 #include <iostream>

@@ -1,9 +1,4 @@
-/*
- * particle.cpp
- *
- *  Created on: Jan 16, 2017
- *      Author: user
- */
+
 
 #include "Particle.h"
 

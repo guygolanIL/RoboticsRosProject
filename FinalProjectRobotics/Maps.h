@@ -1,9 +1,3 @@
-/*
- * maps.h
- *
- *  Created on: Jan 16, 2017
- *      Author: user
- */
 
 #ifndef MAPS_H_
 #define MAPS_H_

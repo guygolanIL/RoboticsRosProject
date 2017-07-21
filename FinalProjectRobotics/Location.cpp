@@ -1,9 +1,3 @@
-/*
- * Location.cpp
- *
- *  Created on: Jan 17, 2017
- *      Author: user
- */
 
 #include "Location.h"
 

@@ -1,9 +1,4 @@
-/*
- * Robot.h
- *
- *  Created on: Jan 17, 2017
- *      Author: user
- */
+
 
 #ifndef ROBOT_H_
 #define ROBOT_H_

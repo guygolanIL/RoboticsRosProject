@@ -1,9 +1,3 @@
-/*
- * Particle.h
- *
- *  Created on: Jan 16, 2017
- *      Author: user
- */
 
 #ifndef Particle_H_
 #define Particle_H_

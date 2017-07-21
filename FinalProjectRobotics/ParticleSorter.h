@@ -1,9 +1,3 @@
-/*
- * ParticleSorter.h
- *
- *  Created on: Mar 7, 2017
- *      Author: user
- */
 
 #ifndef PARTICLESORTER_H_
 #define PARTICLESORTER_H_
