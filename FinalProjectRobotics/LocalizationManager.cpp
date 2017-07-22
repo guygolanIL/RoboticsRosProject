@@ -3,7 +3,7 @@
 
 //Define number of initial particle
 
-#define NUM_OF_PARTICLES 200
+#define NUM_OF_PARTICLES 1000
 
 LocalizationManager::LocalizationManager(const OccupancyGrid &OccGride,
 		Hamster* Hamster, Utils* utils) :
