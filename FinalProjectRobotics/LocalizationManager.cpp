@@ -4,7 +4,7 @@
 
 //Define number of initial particle
 
-#define NUM_OF_PARTICALS 500
+#define NUM_OF_PARTICALS 200
 
 
 
