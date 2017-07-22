@@ -29,7 +29,7 @@ double Particle::getBel() const {
 	return belief;
 }
 
-void Particle::setBel(double bel) {
+void Particle::setBelief(double bel) {
 	this->belief = bel;
 }
 
@@ -37,7 +37,7 @@ void Particle::setBel(double bel) {
 	return location;
 }
 
-void Particle::setParLocation( Location* particleLocation) {
+void Particle::setLocation( Location* particleLocation) {
 	this->location = particleLocation;
 }
 

@@ -26,11 +26,11 @@ using namespace HamsterAPI;
 
 
 /*
- * @param utils
- * @param particles - A vector of particles
- * @param begin  - An Iterator on the particles vector
- * @param occGride
- * @param hamster
+ * utils
+ * particles - A vector of particles
+ * begin  - An Iterator on the particles vector
+ * occGride
+ * hamster
  * */
 
 class LocalizationManager {
@@ -39,56 +39,30 @@ private:
 	Utils* utils;
 	vector<Particle*> particles;
 	vector<Particle*>::iterator begin;
-	const OccupancyGrid & occGride;
+	const OccupancyGrid & og;
 	Hamster* hamster;
 
 
 public:
 
-	/*
-	 * Constructor for Location manager class
-	 * */
 	LocalizationManager(const OccupancyGrid & OccGrid, Hamster* Hamster,Utils* utils);
 
-	/*
-	 * This function update particles location according to the movement of the robot(angle and distance)
-	 * */
 	void update(double radius, double deltaAngle);
 
-	/*
-	 *This function generate single random particle
-	 * */
-	void setRandomPartical(Particle* partical);
+	void resetParticleLocation(Particle* partical);
 
-	/*
-	 * This function initiate NUM_OF_PARTICLES randomly on the map
-	 * */
 	void initParticals();
 
-	/*
-	 * This function it a service function printing all paticles belif
-	 * */
-	void drawPraticls();
+	void printPraticlesBelief();
 
-	/*
-	 * This function calculate the belif of a single particle
-	 * */
-	double calculateBelif(Particle* par);
+	double calculateBelief(Particle* par);
 
-	/*
-	 *
-	 * */
 	virtual ~LocalizationManager();
 
-	/*
-	 * This function select a random particle using a Roulette  wheel selection algorithm
-	 * */
-	int selectParticleUsingRouletteWheel();
+	int randomizeParticle();
 
-	/*
-	 *Generate new stronger particle instead  of weak particle
-	 * */
-	void getRandomGoodParticles();
+
+	void evolutionStep();
 
 	/*
 	 * getter of particles vector

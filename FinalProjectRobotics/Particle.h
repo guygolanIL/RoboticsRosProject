@@ -39,11 +39,11 @@ public:
 
 	double getBel() const;
 
-	void setBel(double bel);
+	void setBelief(double bel);
 
 	Location* getLocation() ;
 
-	void setParLocation( Location* parLocation);
+	void setLocation( Location* parLocation);
 
 	virtual ~Particle();
 
