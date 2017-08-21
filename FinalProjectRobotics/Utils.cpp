@@ -8,10 +8,11 @@
  * resolution - Occupancy grid resolution
  *
  */
-Utils::Utils(int height, int width, double resolution): resolution(resolution) {
-
-	this->height = (double)height;
-	this->width = (double)width;
+Utils::Utils(HamsterAPI::Hamster* hamster) {
+	HamsterAPI::OccupancyGrid ogrid =  hamster->getSLAMMap();
+	this->height = (double)ogrid.getHeight();
+	this->width = (double)ogrid.getWidth();
+	this->resolution = ogrid.getResolution();
 
 }
  /*

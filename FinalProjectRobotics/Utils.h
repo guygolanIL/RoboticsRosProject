@@ -2,6 +2,8 @@
 #ifndef UTILS_H_
 #define UTILS_H_
 
+#include <HamsterAPIClientCPP/Hamster.h>
+
 class Utils {
 
 	double height;
@@ -10,7 +12,7 @@ class Utils {
 public:
 
 
-	Utils(int height, int width, double resolution);
+	Utils(HamsterAPI::Hamster* hamster);
 
 	double fromJToX(double j);
 

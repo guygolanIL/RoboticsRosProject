@@ -5,9 +5,13 @@
 
 #define NUM_OF_PARTICLES 700
 
-LocalizationManager::LocalizationManager(const OccupancyGrid &OccGride,
-		Hamster* Hamster, Utils* utils) :
-		og(OccGride), hamster(Hamster), utils(utils) {
+LocalizationManager::LocalizationManager(Hamster* a_hamster, Utils* a_utils)
+		 {
+	hamster = a_hamster;
+	utils = a_utils;
+	og = hamster->getSLAMMap();
+
+
 }
 
 /*

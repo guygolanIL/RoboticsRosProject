@@ -35,17 +35,18 @@ using namespace HamsterAPI;
 
 class LocalizationManager {
 
+
 private:
 	Utils* utils;
 	vector<Particle*> particles;
 	vector<Particle*>::iterator begin;
-	const OccupancyGrid & og;
+	OccupancyGrid og;
 	Hamster* hamster;
 
 
 public:
 
-	LocalizationManager(const OccupancyGrid & OccGrid, Hamster* Hamster,Utils* utils);
+	LocalizationManager(Hamster* Hamster,Utils* utils);
 
 	void update(double radius, double deltaAngle);
 

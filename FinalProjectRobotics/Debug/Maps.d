@@ -1,5 +1,5 @@
 Maps.o: ../Maps.cpp ../Maps.h ../Particle.h ../Location.h ../Utils.h \
- ../Robot.h
+ ../Robot.h ../LocalizationManager.h ../ParticleSorter.h ../RandomWalk.h
 
 ../Maps.h:
 
@@ -10,3 +10,9 @@ Maps.o: ../Maps.cpp ../Maps.h ../Particle.h ../Location.h ../Utils.h \
 ../Utils.h:
 
 ../Robot.h:
+
+../LocalizationManager.h:
+
+../ParticleSorter.h:
+
+../RandomWalk.h:
