@@ -24,13 +24,13 @@ bool Robot::locator()
 
 		RandomWalk randWalk(hamster);
 		manager->initParticals();
-		bool isStop = false;
 
 		gridMap->buildMap(); 	//builds initial map
 
 
 		while (hamster->isConnected()) {
 			try {
+
 				gridMap->showMap();
 				start = std::clock();
 
@@ -84,7 +84,7 @@ bool Robot::locator()
 					}
 				}
 
-				isStop = gridMap->drawPraticles(manager->getParticles());
+				gridMap->drawPraticles(manager->getParticles());
 
 			} catch (const HamsterAPI::HamsterError & message_error) {
 				HamsterAPI::Log::i("Client", message_error.what());

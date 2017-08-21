@@ -25,14 +25,6 @@ using namespace HamsterAPI;
 #define RADIUS 7
 
 
-/*
- * utils
- * particles - A vector of particles
- * begin  - An Iterator on the particles vector
- * occGride
- * hamster
- * */
-
 class LocalizationManager {
 
 

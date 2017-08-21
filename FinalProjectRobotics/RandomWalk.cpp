@@ -91,7 +91,6 @@ void RandomWalk::moveForward() {
  * Turning Left
  * */
 void RandomWalk::turnLeft() {
-	HamsterAPI::Log::i("Client", "Turning Left");
 	this->moveLeft = true;
 	if(isFrontFree())
 		this->moveLeft = false;
@@ -107,7 +106,6 @@ void RandomWalk::turnLeft() {
  * Turning right
  * */
 void RandomWalk::turnRight() {
-	HamsterAPI::Log::i("Client", "Turning Right");
 	this->moveRight = true;
 	if(isFrontFree())
 		this->moveRight = false;
