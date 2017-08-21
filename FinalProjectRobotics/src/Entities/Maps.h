@@ -1,12 +1,13 @@
 
-#ifndef MAPS_H_
-#define MAPS_H_
+#ifndef ENTITIES_MAPS_H_
+#define ENTITIES_MAPS_H_
 
 #include <HamsterAPIClientCPP/Hamster.h>
 #include <iostream>
 #include <vector>
+
 #include "Particle.h"
-#include "Utils.h"
+#include "../Utils.h"
 using namespace std;
 using namespace HamsterAPI;
 #define MIN_BLUE_BELIEF 0.5
@@ -68,4 +69,4 @@ public:
 	virtual ~Maps();
 };
 
-#endif /* MAPS_H_ */
+#endif /* ENTITIES_MAPS_H_ */

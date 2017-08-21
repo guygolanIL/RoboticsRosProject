@@ -3,6 +3,7 @@
 #define Particle_H_
 #include <HamsterAPIClientCPP/Hamster.h>
 #include <iostream>
+
 #include "Location.h"
 
 #define NUM_OF_CHILD 20

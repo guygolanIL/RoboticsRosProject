@@ -1,6 +1,4 @@
-
 #include "Location.h"
-
 Location::Location(double x, double y,double yaw) {
 	this->x = x;
 	this->y = y;

@@ -6,12 +6,13 @@
 #include <HamsterAPIClientCPP/Hamster.h>
 #include <iostream>
 
-#include "Particle.h"
-#include "Maps.h"
 #include <vector>
 #include "Utils.h"
 #include <algorithm>
-#include "ParticleSorter.h"
+
+#include "Entities/Maps.h"
+#include "Entities/Particle.h"
+#include "Entities/ParticleSorter.h"
 #define MAX_TH  0.002
 #define MIN_TH  0.002
 #define NUM_OF_CHILD 20

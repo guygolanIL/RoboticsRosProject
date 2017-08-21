@@ -1,6 +1,6 @@
 
-#ifndef LOCATION_H_
-#define LOCATION_H_
+#ifndef ENTITIES_LOCATION_H_
+#define ENTITIES_LOCATION_H_
 
 
 /*
@@ -32,4 +32,4 @@ public:
 	void setY(double y);
 };
 
-#endif /* LOCATION_H_ */
+#endif /* ENTITIES_LOCATION_H_ */

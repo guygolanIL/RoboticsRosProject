@@ -5,12 +5,13 @@
 #include <iostream>
 #include <HamsterAPIClientCPP/Hamster.h>
 #include <iostream>
-#include "Maps.h"
 #include "LocalizationManager.h"
 #include "RandomWalk.h"
 #include "Utils.h"
 #include <time.h>
 #include "time.h"
+
+#include "Entities/Maps.h"
 using namespace HamsterAPI;
 using namespace std;
 

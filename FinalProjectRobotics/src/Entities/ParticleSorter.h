@@ -1,6 +1,6 @@
 
-#ifndef PARTICLESORTER_H_
-#define PARTICLESORTER_H_
+#ifndef ENTITIES_PARTICLESORTER_H_
+#define ENTITIES_PARTICLESORTER_H_
 #include "Particle.h"
 class ParticleSorter {
 public:
@@ -14,4 +14,4 @@ public:
 	}
 };
 
-#endif /* PARTICLESORTER_H_ */
+#endif /* ENTITIES_PARTICLESORTER_H_ */
