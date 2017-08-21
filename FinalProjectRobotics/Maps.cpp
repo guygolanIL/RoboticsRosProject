@@ -61,6 +61,7 @@ bool Maps::drawPraticles(vector<Particle*> par){
 	buildMap();
 	unsigned int size = par.size();
 	Location* location;
+
 	double parI;
 	double parJ;
 	bool isStop = false;
@@ -91,12 +92,31 @@ bool Maps::drawPraticles(vector<Particle*> par){
 			fillRedParticle(2*(parI-250),2*(parJ-250)+1);
 			fillRedParticle(2*(parI-250)+1,2*(parJ-250)+1);
 		}
+		paintYawLine(location);
 
 	}
 	showMap();
 	return isStop;
 }
 
+/**
+ * painting the heading of the particle
+ */
+void Maps::paintYawLine(Location* location){
+	int j_end,i_end , i_start,j_start;
+	j_start = utils->fromXToJ(location->getX());
+	i_start = utils->fromYToI(location->getY());
+	j_start = 2*(j_start-250);
+	i_start = 2*(i_start - 250);
+	cv::Scalar_<double> *color = new cv::Scalar_<double>(0, 0, 255); //red
+
+	cv::Point_<int>* start = new cv::Point_<int>((int) (j_start), (int) (i_start));
+	j_end = j_start + (6 * std::cos(location->getYaw() * DEG2RAD));
+	i_end = i_start + (6 * std::sin(location->getYaw() * DEG2RAD));
+	cv::Point_<int>* end = new cv::Point_<int>((int) (j_end),(int) (i_end));
+	cv::line(matrix, *start, *end, *color, 1, 1, 0);
+
+}
 /*
 * fill the near cells of the particle
  * */

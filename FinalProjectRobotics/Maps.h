@@ -63,6 +63,7 @@ public:
 
 	void paintRedParticle(int i,int j);
 
+	void paintYawLine(Location *location);
 
 	virtual ~Maps();
 };

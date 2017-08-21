@@ -3,7 +3,7 @@
 
 //Define number of initial particle
 
-#define NUM_OF_PARTICLES 1000
+#define NUM_OF_PARTICLES 700
 
 LocalizationManager::LocalizationManager(const OccupancyGrid &OccGride,
 		Hamster* Hamster, Utils* utils) :
@@ -48,13 +48,14 @@ void LocalizationManager::update(double radius, double deltaAngle) {
 
 /*
 *Generate new stronger particle instead  of weak particles
+*taking the 200 worst particles and reposition them near a random particle
 * */
 void LocalizationManager::evolutionStep() {
 	int k = 0;
 	int i, j = 0;
 	ParticleSorter comparator;
 	sort(particles.begin(), particles.end(), comparator);
-	//iterating over m worst particles
+	//iterating over 200 worst particles
 	for (int m = NUM_OF_PARTICLES - 1; m > NUM_OF_PARTICLES - 200 - 1; m--) {
 		int chosenOne = randomizeParticle();
 		do {
